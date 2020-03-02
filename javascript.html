@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Cartões de Estudo</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      header {
+        border-bottom: 1px solid #000;
+        background-color: white;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        padding: 10px;
+      }
+      section {
+        border-bottom: 1px solid #000;
+        margin: 0 30px;
+        padding: 30px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">React</h1>
+    </header>
+    <main id="main">
+      
+    </main>
+    <script>
+      window.onload = function() {
+        fetch("decks/javascript.json")
+        .then(response => response.json())
+        .then(data => {
+          const createCardElement = (cardData, index) => {
+            let cardContainerElement = document.createElement('section');
+            
+            let cardQuestionElement = document.createElement('h3');
+            cardQuestionElement.innerText = `Q${index + 1} - ${cardData.question}`;
+            cardContainerElement.appendChild(cardQuestionElement);
+
+            let cardAnswerElement = document.createElement('p');
+            cardAnswerElement.innerText = cardData.answer;
+            cardContainerElement.appendChild(cardAnswerElement);
+
+            return cardContainerElement;
+          };
+
+          document.getElementById('title').innerText = data.title;
+
+          data.cards.forEach((card, index) => document.getElementById('main').appendChild(createCardElement(card, index)));
+        });
+      };
+    </script>
+  </body>
+</html>
