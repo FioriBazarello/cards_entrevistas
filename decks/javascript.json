@@ -2,16 +2,124 @@
   "title": "Javascript questions for interviews",
   "cards": [
     {
-      "question": "",
-      "answer": ""
+      "question": "What is Coercion in JavaScript?",
+      "answer": "It is the conversion of a variable between two build-in types on javascript."
     },
     {
-      "question": "",
-      "answer": ""
+      "question": "Explicit Coercion",
+      "answer": "When the conversion is declared, like in 'let b = Number('42');'"
     },
     {
-      "question": "",
-      "answer": ""
+      "question": "Implicit Coersion",
+      "answer": "When the conversion is the result of an operation, like in 'let b = '42' * 2'"
+    },
+    {
+      "question": "What is Scope in JavaScript?",
+      "answer": "It is a collection of variables and the rules to access this variables."
+    },
+    {
+      "question": "Global Scope",
+      "answer": "The variables created out of a function or class are in the global scope and can be accessed by every function or class."
+    },
+    {
+      "question": "Local Scope",
+      "answer": "The variables created inside a function or class are in the local scope and can be accessed only inside it's class or function."
+    },
+    {
+      "question": "Explain equality in JavaScript",
+      "answer": "You have two types of comparison in javascript: Strict (===) or Abstract (==)."
+    },
+    {
+      "question": "Strict Comparison",
+      "answer": "Is a comparioson that do not allow coersion when comparing values ('4' === 4 // false)."
+    },
+    {
+      "question": "Abstract Comparison",
+      "answer": "It is a compariosn that permits coersion when comparing value ('4' === 4 // true)."
+    },
+    {
+      "question": "Explain what a callback function is.",
+      "answer": "It is a function passed as a parameter to another function and execute after some processing."
+    },
+    {
+      "question": "What does 'use strict' do?",
+      "answer": "It is used on the top of a global or local scope and it doen not permit to set global variables in that scope."
+    },
+    {
+      "question": "Explain Null and Undefined in JavaScript",
+      "answer": "'undefined' is the value when something has not been initialized and 'null' is the value when the value is not avaliable."
+    },
+    {
+      "question": "Lexic Scope",
+      "answer": "Is the way the scope of a variable is defined in Javascript: The position of a variable defines it's scope."
+    },
+    {
+      "question": "Closure Function",
+      "answer": "It is a function created inside another function. Even when returned they can access the scope of the function they're created in."
+    },
+    {
+      "question": "Explain Values and Types in JavaScript",
+      "answer": "Javascript has typed values and not value variables. The values can be 'string', 'number', 'boolean', 'null', 'undefined', 'object' and 'symbol'."
+    },
+    {
+      "question": "Explain event bubbling and how one may prevent it",
+      "answer": "Is when the trigger of an event in a child element triggers it's parents events, for example, when you click an element and both it's event and the parent click event run. It can be stoped using the function event.stopePropagation()."
+    },
+    {
+      "question": "What is 'let' keyword in JavaScript?",
+      "answer": "With 'let' you can declare variables with the scope limited by the block ('if (...) { let x; }', for example) and not by the function, what happens with 'var'."
+    },
+    {
+      "question": "How would you check if a number is an integer?",
+      "answer": "You can use the modulus operator (%) to verify if there is any reminder left or the Number.isInteger()."
+    },
+    {
+      "question": "What is IIFEs (Immediately Invoked Function Expressions)?",
+      "answer": "It is a function that is executed in the instant it is created. It can be used to not pollute the global namespace. Example: '(function run() { console.log('RUN!'); })();'"
+    },
+    {
+      "question": "How to compare two objects in JavaScript?",
+      "answer": "Normal comparison can't verify the underlying values. You need to use a library (like deep-equal) or create a library to compare recursively."
+    },
+    {
+      "question": "Could you explain the difference between ES5 and ES6",
+      "answer": "Arrow functions, string interpolation, constant variables (const), block-scoped variables (let), default function parameter values, classes, for-of operator, spread operator, promises, and modules exporting and importing."
+    },
+    {
+      "question": "Explain the difference between 'undefined' and 'not defined' in JavaScript",
+      "answer": "You can declare a variable ('let x;') and don't define a value so it's value is 'indefined'. If you don't declare the variable and try to read it javascript returns an error 'ReferenceError: x is not defined'."
+    },
+    {
+      "question": "What is the difference between anonymous and named functions?",
+      "answer": "An anonymous function don't have a name declare, even when defined in a variable (const x = function() {...};). A named function have a name declared after the function keyword (function x() {...};)."
+    },
+    {
+      "question": "How would you create a private variable in JavaScript?",
+      "answer": "You can create this variable in the local scope of a function. To get it outside the function you just need to return a closure function that returns the variable."
+    },
+    {
+      "question": "Explain the Prototype Design Pattern",
+      "answer": "In the pattern you can create new objects but they initialize with default values from another object - the prototype."
+    },
+    {
+      "question": "What does the term 'Transpiling' stand for?",
+      "answer": "When you need to transform a language to another or a new version to an old version of the language ou can use a transpiller to translate one to another. In Javascript you have Babel and Traceur."
+    },
+    {
+      "question": "How does the “this” keyword work?",
+      "answer": "'this' refer to the current scope of that part of the code."
+    },
+    {
+      "question": "What is Hoisting in JavaScript?",
+      "answer": "Is the javascript action of move all variable and function declarations to the top of the scope."
+    },
+    {
+      "question": "Describe the Revealing Module Pattern",
+      "answer": "It is a variation of the Module Pattern and have the purpose to encapsulate private variables and functions, just reveling certain of them by an literal object returned."
+    },
+    {
+      "question": "Shadowing",
+      "answer": "Is when a local variable has the same name as a variable defined in a upper scope, 'hidden' it."
     },
     {
       "question": "",
